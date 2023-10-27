@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb://localhost:27017/StonePaperScissor")
+mongoose.connect("mongodb+srv://admin:admin@todoapp.uinrd.mongodb.net/stonePaperScissor?retryWrites=true&w=majority")
 .then(() => console.log('Connected!'))
 .catch((err)=>console.error(err));
 
